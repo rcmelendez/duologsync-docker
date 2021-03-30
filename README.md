@@ -8,12 +8,12 @@ The goal was to make an easy, ready-to-use, lightweight Docker image (only 67 MB
 
 ### 1. Duo 
 - Create an [Admin API](https://duo.com/docs/adminapi#first-steps) application in the Duo Admin Panel.
-- Get your integration key, secret key, and API hostname.
+- Get your **integration key**, **secret key**, and **API hostname**.
 
 ### 2. Devo
 - Set up 4 custom [Devo relay rules](https://docs.devo.com/confluence/ndt/sending-data-to-devo/the-devo-in-house-relay/configuring-the-in-house-relay/relay-rules/defining-a-relay-rule) for these tables:
   - auth.duo.administrator.login (for "*admin_*" actions)
-  - auth.duo.adninistrator.events
+  - auth.duo.administrator.events
   - auth.duo.authentication.events
   - auth.duo.telephony.events
 
