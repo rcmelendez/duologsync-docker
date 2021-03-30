@@ -1,0 +1,38 @@
+version: '1.0.0'
+
+dls_settings:
+  checkpointing:
+    enabled: True
+
+servers:
+    - id: 'devo-duo-administrator'
+      hostname: '192.168.0.99'
+      port: 13010
+      protocol: 'TCP'
+
+    - id: 'devo-duo-authentication'
+      hostname: '192.168.0.99'
+      port: 13011
+      protocol: 'TCP'
+
+    - id: 'devo-duo-telephony'
+      hostname: '192.168.0.99'
+      port: 13012
+      protocol: 'TCP'
+
+account:      
+  ikey: 'NQ0XXXABC69XXXXYZI0F'
+  skey: 'Kqfd1XXXX1bCX42OXXXLxNukWXXXXgUpXXX6KUaT'
+  hostname: 'api-1a2b3c4d.duosecurity.com'
+    
+  endpoint_server_mappings:
+    - endpoints: ['adminaction']
+      server: 'devo-duo-administrator'
+
+    - endpoints: ['auth']
+      server: 'devo-duo-authentication'      
+
+    - endpoints: ['telephony']
+      server: 'devo-duo-telephony'      
+
+  is_msp: False
