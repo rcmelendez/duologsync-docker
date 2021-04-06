@@ -26,7 +26,7 @@ The goal was to make an easy, ready-to-use, lightweight Docker image (only 67 MB
 - Execute the command: `./run.sh`
 
 ### 5. Validation
-- Check that `/tmp/duologsync.log` was generated on the host without errors.
+- Check that `duologsync.log` was generated on the host without errors.
 - Go to the [Devo](https://us.devo.com) webapp and see if you have Duo events in all `auth.duo.*` tables.
 
 
